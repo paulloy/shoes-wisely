@@ -1,0 +1,11 @@
+<div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+    <a *ngFor="let product of products.data" href="#" class="border border-black">
+        <span>
+            <img src="{{ product.mainImage }}" alt="{{ product.name }}">
+        </span>
+        <div>
+            <h5>{{ product.name }}</h5>
+            <span>£{{ product.price.amount }}</span>
+        </div>
+    </a>
+</div>
